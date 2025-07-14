@@ -1,5 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
+ import 'primereact/resources/themes/lara-light-indigo/theme.css'; // Your theme
+import 'primereact/resources/primereact.min.css';                // Core CSS
+import 'primeicons/primeicons.css';                               // PrimeIcons
+import 'primeflex/primeflex.css'; 
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react';
 import { Checkbox } from 'primereact/checkbox';

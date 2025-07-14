@@ -78,6 +78,16 @@ declare namespace Demo {
         name: string;
         image: string;
     }
+    interface Employee {
+        id?: string; 
+        firstName: string;
+        lastName: string;
+        email: string;
+        position: string;
+        salary: number;
+        createdDate?: string; 
+        modifiedDate?: string; 
+    }
 
     interface DialogConfig {
         visible: boolean;
