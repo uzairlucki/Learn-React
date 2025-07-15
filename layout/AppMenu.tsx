@@ -14,7 +14,7 @@ const AppMenu = () => {
         {
             label: 'Pages',
             icon: 'pi pi-fw pi-briefcase',
-            to: '/',
+            to: '/auth/login',
             items: [
                 
                 
