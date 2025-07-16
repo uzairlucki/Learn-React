@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { IconService } from '../../../../demo/service/IconService';
+// import { IconService } from '../../../../demo/service/IconService';
 import { InputText } from 'primereact/inputtext';
 import type { Demo } from '@/types';
 
@@ -9,18 +9,18 @@ const IconsDemo = () => {
     const [icons, setIcons] = useState<Demo.Icon[]>([]);
     const [filteredIcons, setFilteredIcons] = useState<Demo.Icon[]>([]);
 
-    useEffect(() => {
-        IconService.getIcons().then((data) => {
-            data.sort((icon1, icon2) => {
-                if (icon1.properties!.name < icon2.properties!.name) return -1;
-                else if (icon1.properties!.name < icon2.properties!.name) return 1;
-                else return 0;
-            });
+    // useEffect(() => {
+    //     IconService.getIcons().then((data) => {
+    //         data.sort((icon1, icon2) => {
+    //             if (icon1.properties!.name < icon2.properties!.name) return -1;
+    //             else if (icon1.properties!.name < icon2.properties!.name) return 1;
+    //             else return 0;
+    //         });
 
-            setIcons(data);
-            setFilteredIcons(data);
-        });
-    }, []);
+    //         setIcons(data);
+    //         setFilteredIcons(data);
+    //     });
+    // }, []);
 
     const onFilter = (event: React.FormEvent<HTMLInputElement>) => {
         if (!event.currentTarget.value) {

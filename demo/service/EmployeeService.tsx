@@ -7,15 +7,15 @@ export const EmployeeService = {
     API_BASE_URL: 'http://localhost:8080/api/employees',
 
     // Method to get all employees (might still be useful for other purposes, but not for lazy DataTable)
-    async getEmployees(): Promise<Demo.Employee[]> {
-        try {
-            const response = await axios.get<Demo.Employee[]>(this.API_BASE_URL);
-            return response.data;
-        } catch (error) {
-            console.error('Error fetching employees:', error);
-            throw error;
-        }
-    },
+    // async getEmployees(): Promise<Demo.Employee[]> {
+    //     try {
+    //         const response = await axios.get<Demo.Employee[]>(this.API_BASE_URL);
+    //         return response.data;
+    //     } catch (error) {
+    //         console.error('Error fetching employees:', error);
+    //         throw error;
+    //     }
+    // },
 
     /**
      * @description Fetches employees with pagination, sorting, and filtering.
